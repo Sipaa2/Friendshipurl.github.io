@@ -3,26 +3,88 @@
 <head>
   <title>Business Name</title>
   <style>
-    body { font-family: Arial; margin: 0; }
-    header { background: #222; color: white; padding: 40px; text-align: center; }
-    section { padding: 20px; }
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; }
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    section { padding: 30px 20px; max-width: 800px; margin: auto; }
+    h2 { border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+    .pricing div { margin-bottom: 10px; }
+    .image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
-  <h1>Business Name</h1>
-  <p>Simple. Clean. Professional.</p>
+  <h1>Urbina Dirt & Material Delivery</h1>
+  <p>Simple. Professional. Reliable.</p>
 </header>
 
 <section>
-  <h2>About</h2>
-  <p>Describe the business here.</p>
+  <h2>Mission Statement</h2>
+  <p>
+    At Urbina Dirt Delivery & Hauling, our mission is to provide fair and honest pricing, reliable dirt and material delivery, and dependable service. We are committed to transparency, clear communication, and making sure every customer is satisfied with the work we deliver.
+  </p>
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <p>Email | Phone</p>
+  <h2>What I Offer</h2>
+  <ul>
+    <li>Service 1 description</li>
+    <li>Service 2 description</li>
+    <li>Service 3 description</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <div class="pricing">
+    <p>Pricing is based on the amount of material and the distance of delivery.
+      Every job is quoted fairly based on:
+    </p>
+   <ul>
+    <li>Distance from pickup to delivery location</li>
+    <li>Type and amount of material (dirt, gravel, etc.)</li>
+    <li>Load size and job requirements</li>
+  </ul>
+     <p>
+    This ensures you only pay for what you need—nothing more.
+  </p>
+    
+</section>
+
+<section>
+  <h2>Example Work</h2>
+  <img class="image" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+</section>
+
+<section>
+  <h2>Location</h2>
+  <a class="button" 
+     href="https://www.google.com/maps/search/?api=1&query=YOUR+BUSINESS+NAME+ADDRESS+FORT+WORTH"
+     target="_blank">
+     View on Google Maps
+  </a>
+  <p>(Shows reviews + directions automatically)</p>
 </section>
 
 </body>
