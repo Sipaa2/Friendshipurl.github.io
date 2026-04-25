@@ -3,36 +3,46 @@
 <head>
   <title>E.Urbina's Trucking LLC</title>
   <style>
-    
+
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f6f6f6;
     color: #222;
-    line-height: 1.5;
   }
 
+  /* HERO HEADER WITH IMAGE */
   header {
-    background: #1f1f1f;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url('truck.jpg'); /* 👈 replace later */
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
   }
 
   header h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 34px;
   }
 
   header p {
-    margin-top: 8px;
-    opacity: 0.8;
+    margin: 6px 0;
+    opacity: 0.9;
+    font-size: 14px;
+  }
+
+  .contact {
+    margin-top: 12px;
+    font-size: 13px;
+    opacity: 0.85;
   }
 
   section {
     background: white;
     max-width: 850px;
-    margin: 12px auto;   /* 👈 closer together */
+    margin: 12px auto;
     padding: 20px 25px;
     border-radius: 8px;
   }
@@ -41,20 +51,28 @@
     margin-top: 0;
     margin-bottom: 10px;
     padding-bottom: 6px;
-    border-bottom: 1px solid #eee;  /* 👈 subtle line */
+    border-bottom: 1px solid #eee;
     font-size: 20px;
+  }
+
+  /* Smaller / cleaner mission */
+  .mission p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* IMAGE PLACEHOLDERS */
+  .image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 10px;
+    background: #ddd; /* placeholder look */
   }
 
   ul {
     margin-top: 8px;
-  }
-
-  .image {
-    width: 100%;
-    max-height: 280px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-top: 10px;
   }
 
   .button {
@@ -70,6 +88,7 @@
   .button:hover {
     background: #333;
   }
+
   </style>
 </head>
 
@@ -78,35 +97,18 @@
 <header>
   <h1>E.Urbina's Trucking LLC</h1>
   <p>Dirt & Material Delivery</p>
+
+  <div class="contact">
+    Call or Text: (936) xxx-xxxx<br>
+    Send material, amount, and location for pricing
+  </div>
 </header>
 
-<section>
-  <h2>Contact Us:</h2>
-  <p>For an Immediate Quote,please call (936)xxx-xxxx. Feel free to  text, please provide the material, amount and location for pricing.   </p>
-
-<section>
-  
-<section>
-  <h2>Pricing</h2>
-  
-   <p>Pricing is based on the amount of material and the distance of delivery.
-      Every job is quoted fairly based on:
-   </p>
-   <ul>
-    <li>Distance from pickup to delivery location</li>
-    <li>Type and amount of material (dirt, gravel, etc.)</li>
-    <li>Load size and job requirements</li>
-   </ul>
-   <p>
-    This ensures you only pay for what you need—nothing more.
-   </p>
-</section>
-  
-<section>
+<section class="mission">
   <h2>Mission Statement</h2>
   <p>
-    At E.Urbina's Trucking, our mission is to provide fair and honest pricing, reliable dirt and material delivery, and dependable service.
-    We are committed to transparency, clear communication, and making sure every customer is satisfied with the work we deliver.
+    We provide fair and honest pricing, reliable material delivery, and dependable service.
+    Our focus is clear communication and making sure every customer is satisfied.
   </p>
 </section>
 
@@ -114,28 +116,40 @@
   <h2>Materials We Offer</h2>
 
   <p><strong>Dirt:</strong><br>
-    • Select Fill / Clay • Sandy Loam • Sand • Mushroom Compost
+    Select Fill / Clay • Sandy Loam • Sand • Mushroom Compost
   </p>
+  <img class="image" src="dirt.jpg" alt="Dirt material"> <!-- replace -->
 
   <p><strong>Rock:</strong><br>
-    • Limestone Road Base • Crushed Concrete • Millings (when available)
+    Limestone Road Base • Crushed Concrete • Millings
   </p>
+  <img class="image" src="rock.jpg" alt="Rock material"> <!-- replace -->
 
-  <p style="font-size: 14px; color: #555;">
-    If a material isn’t listed, just ask — we can often source it from available pits.<br><br>
-    *Large-load deliveries only — no small residential or garden-sized loads.
+  <p style="font-size: 13px; color: #666;">
+    If a material isn’t listed, ask — we can often source it.<br>
+    *Large-load deliveries only
   </p>
 </section>
 
+<section>
+  <h2>Pricing</h2>
+  <p>
+    Pricing depends on distance, material type, and load size.
+  </p>
+  <ul>
+    <li>Distance from pickup to delivery</li>
+    <li>Material type and amount</li>
+    <li>Load size and job requirements</li>
+  </ul>
+</section>
 
 <section>
   <h2>Location</h2>
-  <a class="button" 
-     href="https://www.google.com/maps/search/?api=1&query=YOUR+BUSINESS+NAME+ADDRESS+FORT+WORTH"
+  <a class="button"
+     href="https://www.google.com/maps/search/?api=1&query=YOUR+BUSINESS+NAME+ADDRESS"
      target="_blank">
      View on Google Maps
   </a>
-  <p>(Shows reviews + directions automatically)</p>
 </section>
 
 </body>
