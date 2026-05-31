@@ -13,36 +13,63 @@
 
   /* HERO HEADER WITH IMAGE */
   header {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
                 url('images/Truck.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 20px;
-    min-height: 320px;
+    padding: 60px 20px;
+    min-height: 400px; /* Made slightly taller to fit bigger text */
 
     display: flex;
     flex-direction: column;
-    justify-content: center center;
+    justify-content: center;
+    align-items: center;
   }
 
   header h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 52px;
     letter-spacing: 1px;
+    font-weight: 900;
   }
 
   header p {
-    margin: 6px 0;
-    opacity: 0.9;
-    font-size: 14px;
+    margin: 10px 0 25px 0;
+    font-size: 24px; /* Bigger Subheading */
+    font-weight: bold;
+    color: #ffcc00; /* Eye-catching yellow color */
   }
 
-  .contact {
-    margin-top: 12px;
-    font-size: 13px;
-    opacity: 0.85;
+  /* BIG CALL TO ACTION SECTION */
+  .quote-box {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 35px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    max-width: 600px;
+  }
+
+  .quote-title {
+    font-size: 32px;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+    letter-spacing: 1px;
+  }
+
+  .contact-line {
+    font-size: 26px; /* Big, readable phone numbers */
+    font-weight: bold;
+    margin: 8px 0;
+  }
+
+  .requirements {
+    font-size: 16px;
+    font-style: italic;
+    color: #ddd;
+    margin-top: 15px;
+    font-weight: bold;
   }
 
   section {
@@ -84,77 +111,62 @@
   .button:hover {
     background: #333;
   }
-/* MATERIAL SCROLL SECTION */
-
-.scroll-container {
-  display: flex;
-  gap: 20px;
-
-  overflow-x: auto;
-
-  padding-bottom: 12px;
-  margin-top: 20px;
-
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-.scroll-container::-webkit-scrollbar {
-  height: 8px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  background: #bbb;
-  border-radius: 20px;
-}
-
-.card {
-  min-width: 270px;
-  cursor: pointer;
-  background: white;
-  scroll-snap-align: start;
-
-  border-radius: 12px;
-
-  overflow: hidden;
-
-  flex-shrink: 0;
-
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-}
-
-.card img {
-  width: 100%;
-  height: 220px;
-
-  object-fit: cover;
-
-  display: block;
-}
-
-.card p {
-  margin: 0;
-
-  padding: 14px;
-
-  text-align: center;
-
-  font-size: 15px;
-
-  font-weight: 600;
-}
-    
-  </style>
   
+  /* MATERIAL SCROLL SECTION */
+  .scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 20px;
+  }
+
+  .card {
+    min-width: 270px;
+    cursor: pointer;
+    background: white;
+    scroll-snap-align: start;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card p {
+    margin: 0;
+    padding: 14px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+  }
+      
+  </style>
+    
 </head>
 
 <body>
@@ -163,9 +175,14 @@
   <h1>E.Urbina's Trucking LLC</h1>
   <p>Dirt & Material Delivery</p>
 
-  <div class="contact">
-    Call or Text: (936) 662-9363<br>
-    Send material, amount, and location for pricing
+  <!-- New High-Impact Quote Section -->
+  <div class="quote-box">
+    <div class="quote-title">NEED A QUOTE?</div>
+    <div class="contact-line">📞 CALL: (936) 662-9363</div>
+    <div class="contact-line">💬 TEXT: (936) 662-9363</div>
+    <div class="requirements">
+      Please include: Material Type + Amount + Delivery Location
+    </div>
   </div>
 </header>
 
